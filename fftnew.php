@@ -55,8 +55,7 @@ if ($login['status'] == 'success') {
 						$sleep = 10;
 				}else{
 
-					$data_follow = ($f == 'y' OR 'y') ? follow($username, $data_login) : '' ;
-					if ($data_follow['status'] == 'success') {
+					
 
 						echo color()["LG"]."Follow Success | ";
 						$sleep = 300;
@@ -95,9 +94,7 @@ if ($login['status'] == 'success') {
 							}
 						}
 					}else{
-
-						echo color()["LR"]."Follow Failed: ".ucfirst($data_follow['details'])."" . PHP_EOL;
-                        $sleep = $data_follow['sleep'];		
+	
                         }
 				}
 
